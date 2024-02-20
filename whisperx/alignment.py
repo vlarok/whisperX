@@ -55,6 +55,17 @@ DEFAULT_ALIGN_MODELS_HF = {
     "ml": "gvs/wav2vec2-large-xlsr-malayalam",
     "no": "NbAiLab/nb-wav2vec2-1b-bokmaal",
     "nn": "NbAiLab/nb-wav2vec2-300m-nynorsk",
+    "ta": "abhinand/tamil-llama-7b-instruct-v0.1",
+    "sv": "KBLab/wav2vec2-large-voxrex-swedish",
+    "sk": "crabz/slovakbert-ner",
+    "ro": "joelniklaus/legal-romanian-roberta-base",
+    "id": "ayameRushia/roberta-base-indonesian-1.5G-sentiment-analysis-smsa",
+    "hr": "ninninz/whisper-large-v3-croatian-v2",
+    "bg": "infinitejoy/wav2vec2-large-xls-r-300m-bulgarian",
+    "ms": "mesolitica/malaysian-distil-whisper-large-v3",
+    "et": "birgermoell/wav2vec2-large-xlrs-estonian",
+    "lt": "DrishtiSharma/whisper-large-v2-lithuanian",
+    "lv": "anton-l/wav2vec2-large-xlsr-53-latvian",
 }
 
 
