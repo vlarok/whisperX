@@ -30,6 +30,8 @@ DEFAULT_ALIGN_MODELS_TORCH = {
 }
 
 DEFAULT_ALIGN_MODELS_HF = {
+    "lt": "DeividasM/wav2vec2-large-xlsr-53-lithuanian",
+    "lv": "infinitejoy/wav2vec2-large-xls-r-300m-latvian",
     "ja": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
     "zh": "jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn",
     "nl": "jonatasgrosman/wav2vec2-large-xlsr-53-dutch",
@@ -64,8 +66,6 @@ DEFAULT_ALIGN_MODELS_HF = {
     "bg": "infinitejoy/wav2vec2-large-xls-r-300m-bulgarian",
     "ms": "mesolitica/malaysian-distil-whisper-large-v3",
     "et": "birgermoell/wav2vec2-large-xlrs-estonian",
-    "lt": "DrishtiSharma/whisper-large-v2-lithuanian",
-    "lv": "anton-l/wav2vec2-large-xlsr-53-latvian",
 }
 
 
@@ -77,7 +77,7 @@ def load_align_model(language_code, device, model_name=None, model_dir=None):
         elif language_code in DEFAULT_ALIGN_MODELS_HF:
             model_name = DEFAULT_ALIGN_MODELS_HF[language_code]
         else:
-            print(f"There is no default alignment model set for this language ({language_code}).\
+            print(f"There is n default alignment model set for this language ({language_code}).\
                 Please find a wav2vec2.0 model finetuned on this language in https://huggingface.co/models, then pass the model name in --align_model [MODEL_NAME]")
             raise ValueError(f"No default align-model for language: {language_code}")
 
